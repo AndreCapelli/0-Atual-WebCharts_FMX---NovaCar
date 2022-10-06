@@ -11051,9 +11051,9 @@ begin
         12 : mesExt := 'Dezembro';
       end;
 
-      montaSQL := montaSQL + ', ISNULL(Mes' + x.ToString + ', '''') ' + mesExt.Substring(0, 3) + ' ';
+      montaSQL := montaSQL + ', ISNULL(Mes' + x.ToString + ', '''') ''' + mesExt.Substring(0, 3) + ''' ';
 
-      montaSQLII := montaSQLII + ', SUM(CONVERT(INT, ISNULL(Mes' + x.ToString + ',''''))) ' + mesExt.Substring(0, 3) + ' ';
+      montaSQLII := montaSQLII + ', SUM(CONVERT(INT, ISNULL(Mes' + x.ToString + ',''''))) ''' + mesExt.Substring(0, 3) + ''' ';
 
     end;
 
@@ -11561,9 +11561,9 @@ begin
         12 : mesExt := 'Dezembro';
       end;
 
-      montaSQL := montaSQL + ', ISNULL(Mes' + x.ToString + ', '''') ' + mesExt.Substring(0, 3) + ' ';
+      montaSQL := montaSQL + ', ISNULL(Mes' + x.ToString + ', '''') ''' + mesExt.Substring(0, 3) + ''' ';
 
-      montaSQLII := montaSQLII + ', SUM(CONVERT(INT, ISNULL(Mes' + x.ToString + ',''''))) ' + mesExt.Substring(0, 3) + ' ';
+      montaSQLII := montaSQLII + ', SUM(CONVERT(INT, ISNULL(Mes' + x.ToString + ',''''))) ''' + mesExt.Substring(0, 3) + ''' ';
 
     end;
 
